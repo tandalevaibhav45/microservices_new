@@ -1,0 +1,14 @@
+{
+    "HOST":"",
+    "APP_CODE":"",
+    "SENDER_MAIL":"",
+    "SMTP_SERVER" : "",
+    "SMTP_PORT" : "",
+    "DB_ENGINE":"",
+    "DB_NAME":"",
+    "DB_USER":"",
+    "DB_PASSWORD":"",
+    "DB_HOST":"",
+    "DB_PORT":""
+
+}

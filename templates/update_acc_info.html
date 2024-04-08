@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+<body>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    .registration-form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+    }
+    
+    .registration-form form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .input-group {
+        margin-bottom: 15px;
+    }
+    
+    .input-group label {
+        margin-bottom: 5px;
+        display: block;
+    }
+    
+    .input-group input {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        width: 100%;
+    }
+    
+    button {
+        padding: 10px;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #0056b3;
+    }
+    
+</style>
+
+<div class="registration-form">
+    
+    <form action="do_update/{{data.id}} " method="post">
+        {% csrf_token %}
+        <h2>User Registration</h2>
+        
+        <div class="input-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="first_name" value = '{{data.first_name}}' required>
+        </div>
+
+        <div class="input-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="last_name" value = '{{data.last_name}}' required>
+        </div>
+
+        <div class="input-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email_add" value = '{{data.email_add}}' required>
+        </div>
+
+        <div class="input-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="contact" value = '{{data.contact}}' required>
+        </div>
+
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" value = '{{data.password}}' required>
+        
+
+        <button type="submit">Update</button>
+        <a href="//127.0.0.1:8000">
+            <button type="button" class="btn btn-primary">Back to Home</button>
+        </a>
+    </div>
+    </form>
+ 
+</div>
+
+</body>
+</html>

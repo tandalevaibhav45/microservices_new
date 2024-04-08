@@ -1,0 +1,29 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <!-- Add Bootstrap for styling and modal -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-5">
+    <h2>OTP Verify</h2>
+    <form method = "POST">
+        {% csrf_token %}
+        <div class="form-group">
+        <label for="otp">OTP</label>
+        <input type="text" class="form-control" id="otp" name="otp" required>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+       
+        <a href="//127.0.0.1:8000">
+            <button type="button" class="btn btn-primary">Back to Home</button>
+        </a>
+    </div>
+            </form>
+</div>
+</body>
+</html>

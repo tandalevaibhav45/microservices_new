@@ -1,0 +1,9 @@
+micro/
+user_register\user_register\__pycache__
+user_register\user_register_app\__pycache__
+user_register\user_login\__pycache__
+user_register\user_login_app\__pycache__
+reset_password\reset_password\__pycache__
+reset_password\reset_password_app\__pycache__
+acc_info_update\acc_info_update\__pycache__
+acc_info_update\acc_info_update_app\__pycache__
